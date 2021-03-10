@@ -13,8 +13,7 @@ let [n,k] = input().split(" ");
 let arr = []
 console.log(n,k)
 for(let i=1; i<=n; i++){
-	if (parseInt(n%i,10)==0) arr.push(i)
-  
+	if (parseInt(n%i,10)==0) arr.push(i) 
 }
 if (arr.length<k){
 	console.log(0)
