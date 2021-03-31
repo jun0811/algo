@@ -30,11 +30,14 @@ K -= 5
 word = [input() for _ in range(N)]
 index = 0
 #a,n,t,i,c은 이미 배운것으로 처리
+index |= (1<< (ord('c')-97))
 index |= (1<< (ord('a')-97))
 index |= (1<< (ord('n')-97))
 index |= (1<< (ord('t')-97))
 index |= (1<< (ord('i')-97))
-index |= (1<< (ord('c')-97))
 maxval = -1
-dfs(0,index,0)
-print(maxval)
+if K <0:
+    print(0)
+else:
+    dfs(0,index,0)
+    print(maxval)
