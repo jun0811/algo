@@ -4,6 +4,7 @@ def dfs(v,i):
         if not visited[s]:
             dfs(s,i)
         elif visited[s] and s ==i:
+            print("-----",s)
             res.append(s)
 
 
