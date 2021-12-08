@@ -1,7 +1,7 @@
 x , y = map(int,input().split())
 n= int(input())
-w_slice = [0]
-h_slice = [0]
+w_slice = [0,x]
+h_slice = [0,y]
 for _ in range(n):
     d , index = map(int,input().split())
     if d==0: # 가로로 자르기
@@ -10,9 +10,6 @@ for _ in range(n):
         w_slice.append(index)
 w_slice.sort()
 h_slice.sort()
-w_slice.append(x)
-h_slice.append(y)
-print(w_slice, h_slice)
 width = []
 height = []
 for i in range(1,len(w_slice)):
